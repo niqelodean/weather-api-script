@@ -12,7 +12,6 @@ try:
     print(f"Temperature in {city_name}: {temp_c}°C")
     print(f"Humidity in {city_name}: {humidity}")
     print(f"Weather in {city_name}: {weather_desc}")
-    print(f"https://wttr.in/{city_name}?format=j1")
 
 except (requests.exceptions.RequestException, ValueError, KeyError, IndexError) as e:
     print(f"Error retrieving or parsing data: {e}")
